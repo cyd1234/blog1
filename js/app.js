@@ -220,7 +220,7 @@
     if (parts[0] === "problems") return { page: "problems" };
     if (parts[0] === "about") return { page: "about" };
     if (parts[0] === "tag" && parts[1]) return { page: "tag", tag: decodeURIComponent(parts[1]) };
-    if (parts[0] === "admin") return { page: "admin" };
+    if (parts[0] === "admin" || (parts[0] && parts[0].indexOf("admin?") === 0)) return { page: "admin" };
     return { page: "home" };
   }
 
