@@ -1166,8 +1166,8 @@
   function loadGitHubConfig() {
     try {
       var saved = localStorage.getItem("blog_github_config");
-      return saved ? JSON.parse(saved) : { token: "", owner: "", repo: "", branch: "main" };
-    } catch (e) { return { token: "", owner: "", repo: "", branch: "main" }; }
+      return saved ? JSON.parse(saved) : { token: "", owner: "cyd1234", repo: "blog1", branch: "main" };
+    } catch (e) { return { token: "", owner: "cyd1234", repo: "blog1", branch: "main" }; }
   }
 
   function saveGitHubConfig(cfg) {
